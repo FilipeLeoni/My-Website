@@ -1,0 +1,194 @@
+.skills-title {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.skills-description {
+    margin-top: 2rem;
+    color: #d3d1d1;
+    font-size: 1.3rem;
+}
+
+.skills-section {
+    margin-left: 6rem;
+}
+
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    width: 12rem;
+    height: 13.9rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img{
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.card1:Hover img, .card2:Hover img, .card3:hover img, .card4:hover img, .card5:hover img, .card6:hover img{
+    opacity: 0.45;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.card1 #text, .card2 #text, .card3 #text, .card4 #text, .card5 #text, .card6 #text{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+    font-size: 1rem;
+    margin-bottom: 3.6rem;
+}
+
+.card1:hover #text, .card2:hover #text, .card3:hover #text, .card4:hover #text, .card5:hover #text, .card6:hover #text {
+    position: absolute;
+    opacity: 1;
+    text-shadow: 200px;
+    transition: all 0.4s;
+}
+
+.card3 #text, .card4 #text {
+    margin-bottom: 2rem;
+}
+
+.skills-cards {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    max-width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card1 {
+    background: rgb(227,79,38);
+    background: linear-gradient(180deg, rgba(227,79,38,0.8) 0%, rgba(239,207,42,0.25) 100%); 
+}
+
+
+.img-card1 {
+    width: 8.8rem;
+}
+
+.card2 {
+    background: rgb(0,137,202);
+    background: linear-gradient(180deg, rgba(0,137,202,0.7) 0%, rgba(0,116,190,0.25) 100%);
+}
+
+.img-card2 {
+    width: 11rem;   
+}
+
+.card3 {
+    background: rgb(218,185,45);
+    background: linear-gradient(180deg, rgba(218,185,45,0.8) 0%, rgba(218,185,45,0.25) 100%);
+}
+
+.img-card3 {
+    width: 19.3rem;
+}
+
+.card4 {
+    background: rgb(14,218,71);
+    background: linear-gradient(180deg, rgba(14,218,71,0.7) 0%, rgba(90,225,107,0.25) 100%);
+}
+
+.img-card4 {
+    width: 11rem;
+}
+
+.card5 {
+    background: rgb(97,218,251);
+    background: linear-gradient(180deg, rgba(97,218,251,0.7) 0%, rgba(97,218,251,0.2) 100%);
+}
+
+.img-card5, .img-card6 {
+    width: 9rem;
+}
+
+.card6 {
+    background: rgb(240,80,51);
+    background: linear-gradient(180deg, rgba(240,80,51,0.7) 0%, rgba(250,90,90,0.25) 100%);
+}
+
+.skills-media #gif {
+    width: 48rem;
+}
+
+
+.skills-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1279px){
+
+    .skills-section {
+        margin: 1rem;
+    }
+        
+    .skills-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-media #gif {
+        width: 40rem;
+        align-items: center;
+        }
+
+    .skills-cards{
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-title {
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .skills-description {
+        margin-top: 1rem;
+        color: #d3d1d1;
+        font-size: 1.3rem;
+    }
+
+    .skills-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6 {
+        width: 11rem;
+        height: 13rem;
+        margin-top: 2rem;
+    }
+
+    .skills-cards{
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .skills-media #gif {
+        width: 30rem;
+        align-items: center;
+        }
+
+}

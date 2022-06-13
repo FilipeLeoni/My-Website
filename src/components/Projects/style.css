@@ -1,0 +1,137 @@
+.project-card #banner {
+    width: 28rem;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.project-card #Click{
+    margin-top: -10rem;
+    margin-left: 6.4rem;
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.project-card:hover #Click{
+    opacity: 1;
+    transition: all 0.4s;
+
+}
+
+.project-card:hover #banner {
+    opacity: 0.7;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+
+
+
+.project-card #git{
+    width: 25px;
+    margin-left: 1.5rem;
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+    
+}
+
+.projects-comp {
+    display: grid;
+    grid-template-columns: 38rem 38rem;
+    grid-template-rows: 33rem ;
+    text-align: center;
+    justify-content: center;
+}
+.project #title  {
+    color: white;
+    margin-left: 6rem;
+    font-size: 1.7rem;
+}
+
+.project-card {
+    background-color: #353535;
+    width: 28rem;
+    height: 27rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card h4 {
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.project-card p {
+    color: #cfcfcf;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 769px){
+    .project #title{
+        color: white;
+        margin-left: 1rem;
+        font-size: 1.9rem;
+    }
+
+    .projects-comp {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 25rem 25rem 25rem 25rem;
+    }
+
+    .project-card{
+        width: 18rem;
+        height: 22rem;
+        border-radius: 20px;
+        margin: 3.2rem;
+        padding: 0;
+    }
+    .project-card #banner {
+        width: 18rem;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .projects-comp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .project-card #banner {
+        width: 25rem;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+        padding: 0;
+    }
+    .project-card{
+        width: 25rem;
+        height: 27rem;
+        border-radius: 20px;
+        margin: 2rem;
+        padding: 0;
+    }
+}
