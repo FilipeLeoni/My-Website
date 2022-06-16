@@ -47,9 +47,9 @@
     display: grid;
     grid-template-columns: 38rem 38rem;
     grid-template-rows: 33rem ;
-    text-align: center;
     justify-content: center;
 }
+
 .project #title  {
     color: white;
     margin-left: 6rem;
